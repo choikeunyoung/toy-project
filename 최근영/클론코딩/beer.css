@@ -209,6 +209,9 @@ li {
 
 .container__second__form__body__slider {
     width: 40%;
+    display: flex;
+    overflow: hidden;
+    position: relative;
 }
 
 .container__second__form__body__slider img {
@@ -520,14 +523,27 @@ li {
     padding-left: 1rem;
 }
 
-.container__sixth__body__content__title img {
+.container__sixth__body__content__title__down {
     width: 18px;
     padding-right: 1rem;
 }
 
+.container__sixth__body__content__title__up {
+    width: 18px;
+    padding-right: 1rem;
+    display: none;
+}
+
 .container__sixth__body__content__hide {
+    display: none;
     border-top: 1px solid #e5e7eb;
     padding: 1rem 0 2rem 0;
+    transition: all .3s;
+}
+
+.show {
+    display: block;
+    transition: all .3s;
 }
 
 .container__sixth__body__content__title span {
